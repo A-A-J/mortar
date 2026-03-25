@@ -1,0 +1,32 @@
+{
+  "error": {
+    "already_deployed": "A mortar is already deployed.",
+    "no_item": "You do not have the required item.",
+    "spawn_failed": "Failed to spawn mortar base (check stream / Config.ModelProp).",
+    "cannot_remove": "You cannot remove this mortar.",
+    "no_inventory_space": "No inventory space for the mortar kit.",
+    "not_owner": "A mortar is already deployed (not yours).",
+    "cannot_sync_entity": "Could not sync mortar entity."
+  },
+  "success": {
+    "removed_returned": "Mortar removed. Kit returned to inventory.",
+    "strike_synced": "Strike target set (synced).",
+    "strike_complete": "Strike complete."
+  },
+  "info": {
+    "updating_position": "Updating mortar position on server…",
+    "rocket_inbound": "Rocket inbound",
+    "target_cancelled": "Target selection cancelled.",
+    "move_cancelled": "Mortar move cancelled.",
+    "placement_cancelled": "Mortar placement cancelled."
+  },
+  "target": {
+    "set_strike": "Set strike target",
+    "move_base": "Move mortar base",
+    "fire": "Fire rocket",
+    "remove_base": "Remove base"
+  },
+  "blip": {
+    "strike_target": "Strike target"
+  }
+}

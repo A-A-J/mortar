@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center-image {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center-image img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+        }
+        #mortar-ui-wrapper {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="mortar-ui-wrapper">
+        <div class="center-image">
+            <img src="pont.png" alt="Mortar Image">
+        </div>
+    </div>
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.action) {
+                let wrapper = document.getElementById('mortar-ui-wrapper');
+                if (event.data.action === "show") {
+                    wrapper.style.display = "flex";
+                } else if (event.data.action === "hide") {
+                    wrapper.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>
